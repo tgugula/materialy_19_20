@@ -4,12 +4,22 @@
         font-family: "Arial Narrow";
 */
 
+p {
+    font-family: "Arial Narrow";
+}
+
+i {
+    font-family: "Arial Narrow";
+}
 
 /*
     Dla nagłówka h1 o id header ustaw kolor czcionki na czerwony
     atrybuty do wykorzystania:
         color: red;
 */
+#header {
+    color: red;
+}
 
 
 /*
@@ -19,43 +29,62 @@
         background-color: grey;
 
 */
+.container {
+    height: 100px;
+    background-color: grey;
 
+}
 
 /*
     Dla wszystkich paragrafów w elemencie blokowym o klasie container ustaw kolor czcionki
     atrybuty do wykorzystania:
         color: white;
 */
+.container {
+    color: white;
 
+}
 
 /*
     Dla paragrafu (p) który jest dzieckiem elemetu blokowego o klasie container ustaw wielkość czcionki
     atrybuty do wykorzystania:
         font-size: 1.5em;
 */
+.container > p {
 
+    font-size: 1.5em;
+}
 
 /*
     Dla pierwszego elementu o klasie listHeader w elemencie blokowym o klasie colorList ustaw kolor tła oraz kolor czcionki
     atrybuty do wykorzystania:
     background-color: #131326;
     color: white;
+
 */
+.listHeader {
+    background-color: #131326;
+    color: white;
 
-
+}
 /*
     Dla wszystkich sąsiadów elementu o klasie listHeader ustaw kolor tła
     atrybuty do wykorzystania:
     background-color: #FBFBFB;
 */
+.listHeader ~ div {
+    background-color: #FBFBFB;
 
+}
 
 /*
     Dla pierwszego sąsiada elementu o klasie listHeader ustaw kolor tła
     atrybuty do wykorzystania:
     background-color: aquamarine;
 */
-
+.listHeader + div  {
+    background-color: aquamarine;
+}
 
 
 
